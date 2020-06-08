@@ -1,7 +1,7 @@
 # cdn_probe
-The purpose of this research is to pinpoint differences in regional CDN caches to demonstrate the possibility of regional differences in content preferences.
+This research is part of the Google Explore CSResearch program at the University of Pennsylvania. This project's goal is to pinpoint differences in regional CDN caches to demonstrate possible differences in content preferences.
 
-To run hello_http.js, you will need to install node.js: 
+In order to run hello_http.js, you will need to install node.js: 
 
 https://nodejs.org/en/download/
 
