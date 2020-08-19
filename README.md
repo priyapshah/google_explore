@@ -1,4 +1,4 @@
-# Google Explore cdn_probe
+# Google exploreCSR
 This research is part of the Google Explore CSResearch program at the University of Pennsylvania. This project's goal is to pinpoint differences in regional CDN caches to demonstrate possible differences in content preferences.
 
 Overall, this project has allowed me to learn more about Hypertext Transfer Protocol.
