@@ -11,4 +11,4 @@ const extractDataFromPerformanceTiming = (timing, ...dataNames) => {
   
   module.exports = {
     extractDataFromPerformanceTiming,
-  };
+  }; 

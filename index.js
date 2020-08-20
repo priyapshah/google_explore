@@ -6,4 +6,4 @@ const inspect_headers = require('./inspect_headers');
   const page = await browser.newPage();
   console.log(await inspect_headers(page));
   await browser.close();
-})();
+})(); 
