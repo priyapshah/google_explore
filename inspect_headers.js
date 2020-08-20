@@ -1,11 +1,19 @@
-const puppeteer = require('puppeteer');
+const { extractDataFromPerformanceTiming } = require('./helpers');
 
-(async () => {
-  const browser = await puppeteer.launch();
-  const page = await browser.newPage();
-  await page.goto('https://cnn.com');
-  
-  // add requests 
+async function inspect_headers(page) {
+  await page.goto('http://youtube.com');
 
-  await browser.close();
-})();
+  const performanceTiming = JSON.parse(
+    await page.evaluate(() => JSON.stringify(window.performance.timing))
+  );
+
+  return extractDataFromPerformanceTiming(
+    performanceTiming,
+    'responseEnd',
+    'domInteractive',
+    'domContentLoadedEventEnd',
+    'loadEventEnd'
+  );
+}
+
+module.exports = inspect_headers;
